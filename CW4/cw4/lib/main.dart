@@ -15,12 +15,25 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("Abdulah Albannay"),
-            Text("name: Wolf"),
-            Text("age: 5"),
-            Text("Gender: Female"),
-            Image.asset("assets/images/apple.png"),
+            Center(
+              child: Image.asset(
+                "assets/images/wolf.png",
+                width: 300,
+                height: 300,
+              ),
+            ),
+            Container(
+              child: Column(
+                children: [
+                  Text("name: Wolf"),
+                  Text("age: 5"),
+                  Text("Gender: Female"),
+                ],
+              ),
+              margin: EdgeInsets.all(80),
+            )
           ],
         ),
       )),
